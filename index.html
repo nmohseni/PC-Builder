@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PC Builder</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="w3.css">
+	<link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Patua+One" rel="stylesheet">
+	<script src=script.js></script>
+</head>
+<body>
+<div class = "w3-mobile w3-cell-middle w3-animate-opacity">
+<header>Welcome to PC Builder</header>
+<p>Enter your criteria to see the best possible build:</p>
+</div>
+	<div class = "w3-mobile w3-cell-middle w3-animate-opacity">
+	<form>
+	<label>Budget ($): </label>
+    <input type="range" id="budgetInputId" min="400" max="1500" oninput="budgetOutputId.value = budgetInputId.value">
+    <output id="budgetOutputId">1000</output>
+    <br>
+		<label>Video Card: </label>
+		  <select id="videoCard">
+ 		  	<option value="nvidia">NVIDIA</option>
+  			<option value="amd">AMD</option>
+		  </select>
+		  <br>
+			<label>Processor: </label>
+		  <select id="processor">
+ 		  	<option value="intel">Intel</option>
+  			<option value="amd">AMD</option>
+		  </select>
+		  <br>
+		  <label>RAM: </label>
+		  <select id="ram">
+		  	<option value="eight">8GB</option>
+		  	<option value="sixteen">16GB</option>
+		  	<option value="thirtytwo">32GB</option>
+		  </select>
+		  <br>
+		  <label>SSD? </label>
+		  <select id="ssd">
+ 		  	<option value="yes">Yes</option>
+  			<option value="no">No</option>
+		  </select>
+		  <br>
+		  <button onclick="criteria()">Submit</button>
+	</form>
+	</div>
+</body>
+</html>
